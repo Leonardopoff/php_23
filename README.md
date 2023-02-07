@@ -14,3 +14,9 @@
     7.2: Sudo service apache2 statuos (apache is running)
     7.3: Sudo service apache2 start.
     7.4: Executar novamente os passos 7.1 e 7.2.
+
+# Para Salvar no github:
+    1: git add. (onde, todos os arquivos ou especificar por nome, Ex: git add index.php)
+    2: git commit -m "Descrever o que foi feito"
+    3: git push
+    4: Verificar no github se ficou salvo
