@@ -1,3 +1,5 @@
+##  primeiro commit 31/01/2023
+## aula 07/02
 # php_23 Manual de passasos.
     1: verificar se estamos no ubuntu.
     2: File -> Open folder
