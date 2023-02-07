@@ -1,4 +1,4 @@
-# php_23
+# php_23 Manual de passasos.
     1: verificar se estamos no ubuntu.
     2: File -> Open folder
     2.1: Apaga o conteudo 
