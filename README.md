@@ -29,4 +29,4 @@ Segunda,
 terceira,
 quarta,
 quinta,
-
+sexta,
