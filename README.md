@@ -32,11 +32,18 @@
                 1 - git checkout "master"
                 2 - git pull (master)
                 3 - git merge "develop"
-
+                4 - Resolver os conflitos se houver
+                4.1 - Com Conflitos: git add . e git commit -m "..."
+                4.2 - Sem conflitos: git merge, git push
+                5 - git push
             Estamos na branch "master/main" e queremos levar as mudanças para a develop
                 1 - git checkout "develop"
                 2 - git pull (develop)
                 3 - git merge "master"
+                4 - Resolver os conflitos se houver
+                4.1- Com Conflitos: git add . e git commit -m "..."
+                4.2 - Sem conflitos: git merge, git push
+                5 - git push
 
 
 
