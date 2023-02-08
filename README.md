@@ -17,6 +17,12 @@
     7.3: Sudo service apache2 start.
     7.4: Executar novamente os passos 7.1 e 7.2.
 
+
+conflito1
+
+
+
+
 # Para Salvar no github:
     1: git add. (onde, todos os arquivos ou especificar por nome, Ex: git add index.php)
     2: git commit -m "Descrever o que foi feito"
@@ -34,7 +40,7 @@
                 3 - git merge "develop"
                 4 - Resolver os conflitos se houver
                 4.1 - Com Conflitos: git add . e git commit -m "..."
-                4.2 - Sem conflitos: git merge, git push
+                4.2 - Sem conflitos: so executar o push
                 5 - git push
             Estamos na branch "master/main" e queremos levar as mudanças para a develop
                 1 - git checkout "develop"
@@ -42,7 +48,7 @@
                 3 - git merge "master"
                 4 - Resolver os conflitos se houver
                 4.1- Com Conflitos: git add . e git commit -m "..."
-                4.2 - Sem conflitos: git merge, git push
+                4.2 - Sem conflitos: so executar o push
                 5 - git push
 
 
