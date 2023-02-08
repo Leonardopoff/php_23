@@ -23,6 +23,23 @@
     3: git push
     4: Verificar no github se ficou salvo
 
+## para o Merge:
+    1: git checkout NOME_DA_BRANCH
+    2: git pull (Obter as atualizações)
+    3: git merge NOME_BRANCH_DA_TRAZER_AS_MUDANÇAS
+        Ex:
+            Estamos na branch "Develop" e queremos levar as mudanças para a master/main
+                1 - git checkout "master"
+                2 - git pull (master)
+                3 - git merge "develop"
+
+            Estamos na branch "master/main" e queremos levar as mudanças para a develop
+                1 - git checkout "develop"
+                2 - git pull (develop)
+                3 - git merge "master"
+
+
+
 
 Primeira,
 Segunda,
