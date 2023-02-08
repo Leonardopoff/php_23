@@ -24,6 +24,7 @@
     4: Verificar no github se ficou salvo
 
 
-Primeira
-Segunda 
+Primeira,
+Segunda,
+terceira,
 
