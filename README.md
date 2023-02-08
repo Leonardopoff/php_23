@@ -17,12 +17,8 @@
     7.3: Sudo service apache2 start.
     7.4: Executar novamente os passos 7.1 e 7.2.
 
-conflito
-conflito1
-
-## mudanças
-conflito2
-
+111+1=112
+abc
 
 # Para Salvar no github:
     1: git add. (onde, todos os arquivos ou especificar por nome, Ex: git add index.php)
@@ -52,16 +48,4 @@ conflito2
                 4.2 - Sem conflitos: so executar o push
                 5 - git push
 
-
-
-
-Primeira,
-Segunda,
-terceira,
-quarta,
-quinta,
-sexta,
-setima,
-oitava,
-nona,
-decima,
+123
