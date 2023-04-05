@@ -48,12 +48,16 @@ $impar = '';
     $resto = $numero % 2;
  
      if ($resto == 0){
-      $par .=$numero . ",";
+      $par .=$numero . ", ";
      } else {
-        $impar .=$numero . ",";
+        $impar .=$numero . ", ";
      }
 
  }
  
  echo  "<br> Os numeros pares, são: " .$par ;
  echo "<br> Os numeros imapres, são: " .$impar;
+
+ 
+
+ 
