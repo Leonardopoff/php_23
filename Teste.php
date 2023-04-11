@@ -40,14 +40,14 @@ $impar = '';
   else    echo "É primo!";
   
  
+*/
 
-*/ 
 
 
 /*
 $primos= '';
 $nprimos= '';
-for($i = 1; $i <= 110; $i++)
+for($i = 1; $i <= 100; $i++)
 {
     // variavel que armazena o número de divisores de um número
     $divisores = 0;
@@ -79,10 +79,34 @@ for($i = 1; $i <= 110; $i++)
     echo '<br>Os numeros que NÂO SÂO PRIMOS, são: ' .$nprimos ;
 */
 
-$pedra = 1;
-$papel =  2;
-$tesoura = 3;
+//$pedra = 1;
+//$papel =  2;
+//$tesoura = 3;
 
+$contprimos = 0;
+$primosEncontrados = '';
 
+    for ($numero = 1; $numero <= 10 ; $numero++) 
+    {
+        echo $numero . "<br>";
 
-    
+        $contDivisores = 0;
+
+        for ($primo =1 ; $primo <= $numero; $primo++){
+            $resto = ($numero % $primo);
+            
+            if ($resto== 0) {
+                $contDivisores ++;
+            }
+        }
+
+        if ($contDivisores == 2){
+            $primosEncontrados .=  $numero . ", ";
+            $contprimos++;
+
+        }
+        if ($contprimos == 3){
+            break;
+        } 
+    }
+     echo "Os numeros primos encontrdos são : " .$primosEncontrados;
