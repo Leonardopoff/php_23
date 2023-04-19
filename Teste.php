@@ -83,10 +83,13 @@ for($i = 1; $i <= 100; $i++)
 //$papel =  2;
 //$tesoura = 3;
 
+// primos divididos por eles mesmo.
+
+/*
 $contprimos = 0;
 $primosEncontrados = '';
 
-    for ($numero = 1; $numero <= 10 ; $numero++) 
+    for ($numero = 22; $numero <= 57 ; $numero++) 
     {
         echo $numero . "<br>";
 
@@ -110,3 +113,63 @@ $primosEncontrados = '';
         } 
     }
      echo "Os numeros primos encontrdos são : " .$primosEncontrados;
+
+     */ 
+
+
+     /*
+     $numero = 6; # capturou numero passado via POST
+$divisores = array();
+$soma = 0;
+
+for ($i=1; $i < $numero; $i++) {
+  if($numero % $i == 0){
+    $soma += $i;
+    array_push($divisores, $i);
+  }
+
+}
+
+echo "Numero: $numero, Soma dos divisores: $soma <br>";
+
+if($soma == $numero)
+  echo "O número é perfeito";
+else
+  echo "O número não é perfeito.\nDivisores: " . implode(", ", $divisores);
+
+*/
+
+
+
+$perfeitosMax = 4;
+$contPerfeitos = 0;
+$numerosPerfeitos = "";
+
+
+for  ($numero = 1; $numero <= 30; $numero++){ 
+
+    $somaDivisores = 0;
+
+   for ($divisor = 1; $divisor <= $numero; $divisor++)
+    { 
+        $resto= $numero % $divisor;
+
+        if ( $resto == 0 ) {
+            $somaDivisores += $divisor;
+        }
+    }
+
+    if ($somaDivisores == $numero){
+        $numerosPerfeitos .= $numero . ",";
+        $contPerfeitos ++;
+
+    }
+
+      
+    if ($contPerfeitos == $perfeitosMax) {
+        break;
+     }
+}
+
+
+echo "Os numeros perfeitos de 1-500 são: " .$numerosPerfeitos;
