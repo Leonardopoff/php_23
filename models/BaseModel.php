@@ -18,15 +18,19 @@ abstract class BaseModel {
 
 
     public function getConexao (){
-        var_dump($this -> $conexaoBancoBM);
+        return($this -> $conexaoBancoBM);
+    }
 
+    public function Create ($nomeTabela, $dados = (), $campos ())
+    {
+        $sql =  "INSERT INTO '{$nomeTabela}' '{$campos}' VALUES ({$dados}})"; 
+    
+        $id = $this -> conexaoBancoBM ->execute_query($sql)->insert_id;
+
+        return $id ?? 0;
     }
 
 }
-$baseModel =  new BaseModel($conexaoBanco);
-//$baseModel -> conexaoBancoBM;
-$BaseModel -> getConexao();
-
 
 
 echo " ola Mundo";
