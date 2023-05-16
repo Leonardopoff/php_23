@@ -1,36 +1,28 @@
 <?php
 
-// CRUD----->> Creat,Read,Update, Delete.
-
-require_once '../conexao/bancodedados.php'; // vai carregar uma vez
-// require vai carregar novamente
-
-//include '../conexao/bancodedados.php'; vai carregar sempre que executado
-//include_once '../conexao/bancodedados.php'; vai carregar uma vez
+require_once '../conexao/bancoDados.php'; // carrega uma vez (once)
 
 abstract class BaseModel {
     public $conexaoBancoBM;
     
-    public function __construct( $conexaoBancoParam = null) {
-        // uses database php_lab
-        $this->$conexaoBancoBM = $conexaoBancoParam;
+    public function __construct($conexaoBancoParam = null) {
+        $this->conexaoBancoBM = $conexaoBancoParam;
     }
 
-
-    public function getConexao (){
-        return($this -> $conexaoBancoBM);
+    public function getConexao() {
+        return $this->conexaoBancoBM;
     }
 
-    public function Create ($nomeTabela, $dados = (), $campos ())
-    {
-        $sql =  "INSERT INTO '{$nomeTabela}' '{$campos}' VALUES ({$dados}})"; 
-    
-        $id = $this -> conexaoBancoBM ->execute_query($sql)->insert_id;
+     public function Create($nomeTabela, $campos = [], $dados = [])
+     {
+        // INSERT INTO USUARIOS (NOME, USER_NAME) VALUES ('isabel', 'isabel_infoserv');
 
-        return $id ?? 0;
-    }
+        $sql = "INSERT INTO '{$nomeTabela}' '{$campos}' VALUES ({$dados}})";
 
+        $id = $this->conexaoBancoBM->execute_query($sql)->insert_id;
+
+        return $id;
+     }
+
+    // CRUD = Create, Read, Update, Delete.
 }
-
-
-echo " ola Mundo";
